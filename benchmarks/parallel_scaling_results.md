@@ -20,7 +20,7 @@ python3 tds_multiproc_joblib.py \
 |------|--------------|---------|
 | 1    | 62           | 1.0×    |
 | 8    | 10           | 6.2×    |
-| 16   | 7            | 1.4×    |
+| 16   | 7            | 8.9×    |
 
 Observations:
 - Diminishing returns becoming noticeable when comparing 8-cores vs. 16-cores
