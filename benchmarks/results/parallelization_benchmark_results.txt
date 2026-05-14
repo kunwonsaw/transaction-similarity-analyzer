@@ -1,0 +1,61 @@
+========================================================================
+  PARALLELIZATION STRATEGY BENCHMARK
+========================================================================
+
+---- Environment ----
+Timestamp            : 2026-04-08 15:38:40
+Python Version       : 3.10.12
+Platform             : Linux-6.2.0-34-generic-x86_64-with-glibc2.35
+Processor            : x86_64
+Available CPUs       : 32
+
+---- Benchmark Config ----
+Pair Sizes           : 1,000, 5,000, 10,000, 50,000, 100,000
+Core Counts          : 2, 4, 8
+Chunk Size           : 1,000
+String Length        : 24
+Runs per config      : 3
+Algorithm            : RapidFuzz (multi-metric average)
+
+---- Results ----
+
+     Pairs | Method             | Cores |   Chunk |   Avg Time |  Speedup |      Throughput
+-------------------------------------------------------------------------------------------
+     1,000 | Sequential         |     1 |       - |    0.0049s |    1.00x |      205,826/s
+     1,000 | Joblib             |     2 |   1,000 |    0.0531s |    0.09x |       18,819/s
+     1,000 | Multiprocessing    |     2 |   1,000 |    0.0096s |    0.50x |      103,907/s
+     1,000 | Joblib             |     4 |   1,000 |    0.0564s |    0.09x |       17,732/s
+     1,000 | Multiprocessing    |     4 |   1,000 |    0.0123s |    0.39x |       81,189/s
+     1,000 | Joblib             |     8 |   1,000 |    0.0513s |    0.09x |       19,475/s
+     1,000 | Multiprocessing    |     8 |   1,000 |    0.0184s |    0.26x |       54,298/s
+     5,000 | Sequential         |     1 |       - |    0.0237s |    1.00x |      210,658/s
+     5,000 | Joblib             |     2 |   1,000 |    0.0708s |    0.34x |       70,593/s
+     5,000 | Multiprocessing    |     2 |   1,000 |    0.0331s |    0.72x |      151,038/s
+     5,000 | Joblib             |     4 |   1,000 |    0.0564s |    0.42x |       88,634/s
+     5,000 | Multiprocessing    |     4 |   1,000 |    0.0173s |    1.37x |      288,508/s
+     5,000 | Joblib             |     8 |   1,000 |    0.0539s |    0.44x |       92,848/s
+     5,000 | Multiprocessing    |     8 |   1,000 |    0.0195s |    1.22x |      256,334/s
+    10,000 | Sequential         |     1 |       - |    0.0452s |    1.00x |      221,319/s
+    10,000 | Joblib             |     2 |   1,000 |    0.0802s |    0.56x |      124,758/s
+    10,000 | Multiprocessing    |     2 |   1,000 |    0.0300s |    1.50x |      332,893/s
+    10,000 | Joblib             |     4 |   1,000 |    0.0610s |    0.74x |      163,808/s
+    10,000 | Multiprocessing    |     4 |   1,000 |    0.0216s |    2.09x |      462,434/s
+    10,000 | Joblib             |     8 |   1,000 |    0.0603s |    0.75x |      165,922/s
+    10,000 | Multiprocessing    |     8 |   1,000 |    0.0238s |    1.90x |      420,924/s
+    50,000 | Sequential         |     1 |       - |    0.2289s |    1.00x |      218,438/s
+    50,000 | Joblib             |     2 |   1,000 |    0.1720s |    1.33x |      290,652/s
+    50,000 | Multiprocessing    |     2 |   1,000 |    0.1265s |    1.81x |      395,291/s
+    50,000 | Joblib             |     4 |   1,000 |    0.1109s |    2.06x |      450,925/s
+    50,000 | Multiprocessing    |     4 |   1,000 |    0.0711s |    3.22x |      702,993/s
+    50,000 | Joblib             |     8 |   1,000 |    0.0860s |    2.66x |      581,523/s
+    50,000 | Multiprocessing    |     8 |   1,000 |    0.0499s |    4.58x |    1,001,421/s
+   100,000 | Sequential         |     1 |       - |    0.4485s |    1.00x |      222,976/s
+   100,000 | Joblib             |     2 |   1,000 |    0.2878s |    1.56x |      347,492/s
+   100,000 | Multiprocessing    |     2 |   1,000 |    0.2650s |    1.69x |      377,319/s
+   100,000 | Joblib             |     4 |   1,000 |    0.1659s |    2.70x |      602,830/s
+   100,000 | Multiprocessing    |     4 |   1,000 |    0.1531s |    2.93x |      653,246/s
+   100,000 | Joblib             |     8 |   1,000 |    0.1284s |    3.49x |      778,844/s
+   100,000 | Multiprocessing    |     8 |   1,000 |    0.0831s |    5.40x |    1,202,954/s
+
+---- Observations ----
+(Fill in after reviewing results)
