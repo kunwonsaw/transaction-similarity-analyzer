@@ -55,8 +55,8 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/mechadept/transaction-similarity-analyzer"
-Issues = "https://github.com/mechadept/transaction-similarity-analyzer/issues"
+Repository = "https://github.com/kunwonsaw/transaction-similarity-analyzer"
+Issues = "https://github.com/kunwonsaw/transaction-similarity-analyzer/issues"
 
 [project.scripts]
 transaction-similarity-analyzer = "similarity_analyzer.analyzer:main"
