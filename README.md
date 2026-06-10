@@ -64,7 +64,7 @@ All tests use RapidFuzz with `chunk_size=1,000` on a 32-core machine (13th Gen I
 ## Installation
 
 ```bash
-git clone https://github.com/mechadept/transaction-similarity-analyzer.git
+git clone https://github.com/kunwonsaw/transaction-similarity-analyzer.git
 cd transaction-similarity-analyzer
 pip install -e .
 ```
@@ -235,4 +235,4 @@ MIT
 
 **Kunwon Saw** — Data Scientist focused on procurement analytics and fraud detection.
 
-- GitHub: [@mechadept](https://github.com/mechadept)
+- GitHub: [@kunwonsaw](https://github.com/kunwonsaw)
